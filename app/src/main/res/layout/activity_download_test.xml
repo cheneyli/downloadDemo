@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/id_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_margin="@dimen/dimen_10"
+            android:text="@string/txt_reminder"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_12" />
+        <TextView
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_reminder"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dimen_10"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:paddingStart="@dimen/dimen_10"
+            android:text="@string/download"
+            android:textSize="@dimen/dimen_12" />
+
+        <EditText
+            android:id="@+id/url_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_below="@+id/txt_reminder"
+            android:layout_toLeftOf="@+id/btn_download"
+            android:layout_toStartOf="@+id/btn_download"
+            android:background="@null"
+            android:hint="@string/url_hint"
+            android:inputType="textUri"
+            android:paddingEnd="@dimen/dimen_10"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:paddingStart="@dimen/dimen_10" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/download_test_content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_title" />
+
+</RelativeLayout>

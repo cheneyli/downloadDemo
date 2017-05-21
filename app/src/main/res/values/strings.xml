@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FileDownExample</string>
+    <string name="download">Download</string>
+    <string name="url_hint">输入下载的网址</string>
+    <string name="txt_reminder">点击下载,会添加默认的url, 目前支持点击两次</string>
+</resources>
